@@ -1,0 +1,1 @@
+My first project in programming was building a game with the Pygame library, inspired by Chicken Invaders.
