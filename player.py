@@ -31,9 +31,9 @@ class player:
         self.player_XY=pygame.Rect(100, 300, self.playerwidth, self.playerheight)
 
         # player stats #
-        self.HP=130
-        self.money_amount=1000000
-        self.kill_count=0
+        self.HP=300
+        self.money_amount=430000
+        self.kill_count=27
 
 
 

@@ -1,0 +1,19 @@
+import pygame
+import sys
+import os
+import random
+import time
+pygame.init()
+
+
+
+class player:
+
+    def __init__(self):
+        self.playerwidth = 55
+        self.playerheight = 40
+        self.player_image = pygame.image.load(os.path.join('Assets', 'spaceship_red.png'))
+        self.player_image = pygame.transform.scale(self.player_image, (self.playerwidth, self.playerheight))
+        self.player_image = pygame.transform.rotate(pygame.transform.scale(self.player_image, (self.playerwidth, self.playerheight)), 180)
+        self.playershoot = pygame.image.load((os.path.join('Assets', 'shoot.png')))
+        self.playershoot = pygame.transform.scale(self.playershoot, (10, 20))

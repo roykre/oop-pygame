@@ -86,12 +86,12 @@ def main():
         k += 1
         #enemy create bullet  #
         Time_now1 = time.time()
-        if Time_now1 - startTimeforshooting  >= 0.8:
+        if Time_now1 - startTimeforshooting  >= 1.2:
             startTimeforshooting  = time.time()
             enemy_object.create_enemy_bullet()
         # create meteor
         Time_now2 = time.time()
-        if Time_now2 - startTimeformeteor >= 0.8:
+        if Time_now2 - startTimeformeteor >= 1.2:
             startTimeformeteor = time.time()
             meteor_object.meteorspawn()
         keys_pressed = pygame.key.get_pressed()
@@ -116,9 +116,9 @@ def drawboard(player1,enemy_object,money_object,meteor_object):
         gameboard.blit(money_object.money_image,(bag.x,bag.y))
     for meteor in meteor_object.meteorlist:
         gameboard.blit(meteor_object.meteor_image,(meteor.x,meteor.y))
-    gameboard.blit(player1.set_life(), (780, 430))
-    gameboard.blit(player1.set_money(),(780, 450))
-    gameboard.blit(player1.set_kills(),(780,470))
+    gameboard.blit(player1.set_life(), (770, 430))
+    gameboard.blit(player1.set_money(),(770, 450))
+    gameboard.blit(player1.set_kills(),(770,470))
     pygame.display.update()
 
 def drawstore(store_object):
@@ -156,3 +156,9 @@ if __name__ == '__main__':
 
 
 
+def rol():
+    list1=[]
+    for bet in range(1,36):
+        chance=bet/37
+        reward=360-(bet*10)
+        bet*10*(chance)

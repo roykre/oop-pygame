@@ -7,7 +7,7 @@ pygame.init()
 
 class store:
     def __init__(self):
-        self.store_image = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'store.jpg')), (900, 500))
+        self.store_image = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'store.png')), (900, 500))
         self.GREEN = (127, 255, 0)
         self.font = pygame.font.SysFont('', 50)
         self.massage = self.font.render('', True, self.GREEN)
